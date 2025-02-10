@@ -1,0 +1,36 @@
+:root {
+  font-family: Roboto;
+  --orange-color: #df6d14;
+  --light-yellow: #f8f5e9;
+  --dark-green: #3a7d44;
+  --light-green: #9dc08b;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-yellow);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav,
+footer {
+  background-color: var(--orange-color);
+  padding: 0.5rem;
+}
+
+nav > button {
+  background-color: aqua;
+}
