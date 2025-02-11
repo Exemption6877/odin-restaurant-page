@@ -15,22 +15,82 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--orange-color);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 0 0.5rem black;
+  background-color: white;
+}
+
+header > h1:first-of-type {
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.nav-buttons {
+  padding-right: 1rem;
+}
+
+.nav-buttons > button {
+  background-color: white;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border: none;
+  border-radius: 1ch;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-yellow);
+  box-shadow: 0 0 0.5rem black;
+  padding: 1rem;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--light-yellow);
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+#home > * {
+  height: auto;
+  width: 50%;
+  text-align: center;
 }
 
-nav,
 footer {
-  background-color: var(--orange-color);
-  padding: 0.5rem;
-}
-
-nav > button {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-weight: bolder;
+  font-size: 1rem;
+  box-shadow: 0 0 0.5rem black;
 }
