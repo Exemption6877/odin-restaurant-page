@@ -40,6 +40,11 @@ header > h1:first-of-type {
   color: var(--orange-color);
 }
 
+.entries {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-buttons {
   padding-right: 1rem;
 }
