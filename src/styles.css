@@ -37,6 +37,7 @@ header > h1:first-of-type {
   margin: 0;
   padding: 0;
   padding-left: 1rem;
+  color: var(--orange-color);
 }
 
 .nav-buttons {
